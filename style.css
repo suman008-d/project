@@ -11,6 +11,25 @@
     align-items: center;
     justify-content:space-evenly;
 }
+.nav-menu{
+    height: 40px;
+    background-color: #222;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 0.9rem;
+}
+.nav-item{
+    color: white;
+    text-decoration: none;
+}
 .nav-logo{
     height: 50px;
     width: 100px;
@@ -72,4 +91,309 @@ span{
 .nav-cart i{
     font-size: 30px;
     
+}
+/**hero section**/
+.hero-section{
+    height: 700px;
+    background-image: url("pic.jpg");
+    background-size:auto;
+    background-position: center;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+
+    max-width: 650px;
+
+    margin-left: 5%;
+    padding-top: 13vh;
+}
+
+.small-heading {
+    font-size: 15px;
+    letter-spacing: 5px;
+
+    color: #ddd;
+
+    margin-bottom: 25px;
+}
+
+
+/* Main heading */
+
+.hero-content h1 {
+    font-size: clamp(55px, 7vw, 100px);
+
+    line-height: 0.95;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    color: white;
+}
+
+.hero-content h1 span {
+    color: #e31e24;
+    height: 100%;
+}
+
+
+/* Subtitle */
+
+.hero-content h2 {
+    font-size: clamp(30px, 4vw, 55px);
+
+    font-weight: 400;
+
+    letter-spacing: 7px;
+
+    margin-top: 15px;
+    color:aliceblue
+}
+
+
+/* Description */
+
+.description {
+    max-width: 500px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #ddd;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   SHOP BUTTON
+========================= */
+
+.shop-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-top: 35px;
+
+    padding: 17px 30px;
+
+    background: #e31e24;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    border-radius: 35px;
+
+    transition: 0.3s;
+}
+
+
+.shop-btn span {
+    font-size: 25px;
+}
+
+.shop-btn:hover {
+    background: white;
+    color: #e31e24;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    display: flex;
+    align-items: center;
+
+    margin-top: 55px;
+
+    gap: 28px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-align: center;
+}
+
+.feature-icon {
+    width: 35px;
+    height: 35px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.feature p {
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #ddd;
+}
+
+.divider {
+    height: 50px;
+    width: 1px;
+
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* =========================
+   OTHER SECTIONS
+========================= */
+
+.section {
+    min-height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: #111;
+}
+
+.section h2 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.section h2 span {
+    color: #e31e24;
+    height: 100%;
+}
+
+.section p {
+    margin-top: 15px;
+
+    color: #aaa;
+
+    font-family: Arial, sans-serif;
+}
+
+.dark-section {
+    background: #080808;
+}
+
+#contact h2 {
+    color: #e31e24;
+}
+
+#contact p {
+    color: #fff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 20px 4%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero-content {
+        margin-left: 5%;
+        padding-top: 15vh;
+
+        max-width: 90%;
+    }
+
+    .hero {
+        background-position: 65% center;
+    }
+
+    .features {
+        gap: 15px;
+    }
+
+    .feature p {
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 80px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .nav-icons {
+        font-size: 20px;
+    }
+
+    .hero-content {
+        padding-top: 12vh;
+    }
+
+    .small-heading {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    .description {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .divider {
+        display: none;
+    }
 }
